@@ -49,7 +49,7 @@ chrome.runtime.onMessage.addListener(function(request, sender) {
     perm(flag, words, [], list);
     //var msg = document.getElementById('message');
     for (var i=0; i < list.length; i++) {
-        findKeyword('\t'+list[i]+'\t');
+        findKeyword(list[i]);
         //msg.innerText += list[i];
     }
   }
